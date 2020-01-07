@@ -17,6 +17,7 @@ from django.conf.urls import url
 from django.contrib import admin
 from api import views
 
+
 urlpatterns = [
 	url(r'^admin/', admin.site.urls),
 	url(r'^api/login', views.Login.as_view()),
@@ -28,5 +29,6 @@ urlpatterns = [
 	# 公司用
 	url(r'^api/pro/login', views.ProLoginView.as_view()),
 	url(r'^api/pro/order', views.ProOrderView.as_view()),
+	#url(r'^api/pro/order', views.ProOrderView.as_view()),
 
 ]
